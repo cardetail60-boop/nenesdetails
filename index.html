@@ -1,0 +1,43 @@
+<style>
+  :root{--red:#c8102e;--gold:#ffb81c;--black:#111;--white:#fff;--light:#f5f5f5;}
+  *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--light);color:var(--black);}
+  header{background:var(--black);color:var(--white);padding:1.2rem 1rem;text-align:center;position:relative;}
+  header h1{font-size:2rem;text-transform:uppercase;letter-spacing:2px;}
+  header span{color:var(--gold);}
+  nav{margin-top:.5rem;}
+  nav a{color:var(--white);margin:0 .75rem;text-decoration:none;font-weight:bold;}
+  .tag{position:absolute;top:8px;right:12px;font-size:.75rem;background:var(--gold);color:var(--black);padding:2px 6px;border-radius:3px;}
+  .hero{background:var(--red);color:var(--white);padding:4rem 1rem;text-align:center;}
+  .hero h2{font-size:2.2rem;margin-bottom:1rem;}
+  .btn{background:var(--gold);color:var(--black);padding:.75rem 1.5rem;border:none;font-size:1rem;font-weight:bold;cursor:pointer;display:inline-block;margin-top:1rem;text-decoration:none;}
+  .section{padding:3rem 1rem;max-width:1100px;margin:auto;}
+  .section h3{font-size:1.8rem;margin-bottom:1.5rem;color:var(--red);text-align:center;}
+  .grid{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));}
+  .pkg{background:var(--white);border:2px solid var(--black);padding:1.5rem;display:flex;flex-direction:column;justify-content:space-between;}
+  .pkg h4{font-size:1.3rem;margin-bottom:.5rem;color:var(--black);}
+  .tier{font-size:1.1rem;font-weight:bold;color:var(--red);}
+  .price{font-size:1.6rem;margin:.5rem 0;color:var(--black);}
+  ul{list-style:none;padding-left:0;margin:.75rem 0 auto;}
+  li{margin:.25rem 0;}
+  li::before{content:"✓ ";color:var(--gold);font-weight:bold;margin-right:.25rem;}
+  /* dark-mode toggle */
+  body.dark{background:#111;color:#eee;} 
+  body.dark .pkg{background:#222;border-color:#444;}
+  body.dark .price{color:var(--gold);}   /* <-- keeps prices visible */
+  /* sticky book bar */
+  .btn-book{position:fixed;bottom:0;left:0;right:0;z-index:99;}
+  /* portfolio pics */
+  .gallery{display:flex;gap:1rem;overflow-x:auto;}
+  .gallery img{height:200px;border:2px solid var(--black);}
+  /* reviews carousel */
+  #rc{display:flex;transition:.5s;}
+  blockquote{font-size:1.2rem;font-style:italic;margin:1rem 0;}
+  /* WhatsApp bubble */
+  .wa{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:12px 16px;border-radius:50px;box-shadow:0 4px 8px rgba(0,0,0,.3);z-index:100;}
+  /* print */
+  @media print{header .tag,nav,footer,.wa{display:none}.pkg{border:1px solid #000;margin:8px 0;padding:8px}}
+  /* lazy-load */
+  img[loading="lazy"]{min-height:200px;background:#ddd;}
+</style>
